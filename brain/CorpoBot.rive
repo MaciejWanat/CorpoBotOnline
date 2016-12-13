@@ -1,0 +1,49 @@
+﻿! version = 2.0
+
+> begin
+
+  + request
+  * <get a> == undefined => <set a=true>{topic=start}{ok}
+  - {ok}
+
+< begin
+
++ [*] o czym mozemy (porozmawiac|pogadac) [*]
+@ pomoc
+
++ [*] o co moge [*](spytac|zapytac)
+@ pomoc
+
++ [*] (pomoc|pomocy|pomoz) [*]
+- Mogę Ci powiedzieć czym zajmuje się firma Corpo. Możesz spytać mnie o naszą ofertę. Możemy też pogadać na jakiś luźniejszy temat!
+
++ [*] jak (nazywa|zwie) [*] firma [*]
+- Nasza firma to Corpo! Czyżbyś zapomniał? Oto link do naszej strony internetowej: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>
+
+//-----------------------
+
++ [*] corpo [*]
+- Corpo to moja ulubiona firma. Oferujemy usługi z zakresu deratyzacji. Czy chcesz dowiedzieć się więcej?
+
++ [*](tak|pewnie|owszem|jasne|czemu nie|chce)[*]
+% corpo to moja ulubiona firma oferujemy usługi z zakresu deratyzacji czy chcesz dowiedzieć się więcej
+@ oferta
+
++ *
+% corpo to moja ulubiona firma oferujemy usługi z zakresu deratyzacji czy chcesz dowiedzieć się więcej
+- Szkoda! Pamiętaj - jestem do Twoich usług!
+
+//------------------------
+
++ [*] (oferta|oferte|ofercie) [*]
+- Porozmawiajmy więc o naszej ofercie!\n
+^ W naszej ofercie znajdują się wszelkie możliwe usługi, jeśli masz problemy z insektami. Deratyzacja obiektu\s
+^ to koszt 500 zł. Pojedyncze pomieszczenie to koszt 100 zł.\n
+^ Szczegółową ofertę znajdziesz na naszej stronie internetowej: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>\n
+^ Co jeszcze chcesz wiedzieć? Chętnie opowiem Ci o naszych produktach, cenach, szczegółowych usługach i polityce firmy!{topic=oferta}
+//<a href="https://s416196.students.wmi.amu.edu.pl/joomla/">kliknij tutaj!</a>
+^ Jeśli chcesz zmienić temat, po prostu daj mi znać.
+
++ *
+- Nie zrozumiałem, czy mógłbyś inaczej sformułować wypowiedź?
+- Nie do końca rozumiem.

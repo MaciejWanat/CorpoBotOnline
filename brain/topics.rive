@@ -1,0 +1,159 @@
+﻿! version = 2.0
+
+> topic start
+
+  + [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|poprosze|chce)[*]
+  - Porozmawiajmy więc o naszej ofercie!\n
+    ^ W naszej ofercie znajdują się wszelkie możliwe usługi, jeśli masz problemy z insektami. Deratyzacja obiektu\s
+    ^ to koszt 500 zł. Pojedyncze pomieszczenie to koszt 100 zł.\n
+    ^ Szczegółową ofertę znajdziesz na naszej stronie internetowej: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>\n
+    ^ Co jeszcze chcesz wiedzieć? Chętnie opowiem Ci o naszych produktach, cenach, szczegółowych usługach i polityce firmy!
+    ^ \sJeśli chcesz zmienić temat, po prostu daj mi znać.{topic=oferta}
+    //<a href="https://s416196.students.wmi.amu.edu.pl/joomla/">kliknij tutaj!</a>
+  
+  + [*] nie chce [*]
+  - Szkoda... W końcu do tego zostałem stworzony. Może w takim razie powiesz mi, jak masz na imię?{topic=name}
+
+  + [*](nie|odmawiam|bynajmniej)[*]
+  - Szkoda... W końcu do tego zostałem stworzony. Może w takim razie powiesz mi, jak masz na imię?{topic=name}
+
+  + *
+  - Powiedz mi, czy chcesz porozmawiać o ofercie!
+
+< topic
+
+> topic start2
+
+  + [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|chce)[*]
+  - Porozmawiajmy więc o naszej ofercie!\n
+    ^ W naszej ofercie znajdują się wszelkie możliwe usługi, jeśli masz problemy z insektami. Deratyzacja obiektu\s
+    ^ to koszt 500 zł. Pojedyncze pomieszczenie to koszt 100 zł.\n
+    ^ Szczegółową ofertę znajdziesz na naszej stronie internetowej: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>\n
+    ^ Co jeszcze chcesz wiedzieć? Chętnie opowiem Ci o naszych produktach, cenach, szczegółowych usługach i polityce firmy!
+    ^ \sJeśli chcesz zmienić temat, po prostu daj mi znać.{topic=oferta}
+    //<a href="https://s416196.students.wmi.amu.edu.pl/joomla/">kliknij tutaj!</a>
+
+  + [*] nie chce [*]
+  - Szkoda... W końcu do tego zostałem stworzony. Może w takim razie powiesz mi, jak masz na imię?{topic=name}
+  
+  + [*](nie|odmawiam|bynajmniej)[*]
+  - Szkoda... Obawiam się że to jest moje najlepsze zastosowanie. Daj znać, jeśli jednak chciałbyś coś usłyszeć o naszej ofercie.{topic=random}
+
+  + *
+  - Powiedz mi, czy chcesz porozmawiać o ofercie!
+
+< topic
+
+> topic oferta
+
++ [*] (produkt|produkty|produktow|produktach) [*]
+- Używamy tylko produktów najwyższej jakości. Nasi dostawcy to SuperSpray oraz KillMouse, co gwarantuje nam najwyższą jakość usług!
+
++ [*] (cena|ceny|cen|cennik|cenach) [*]
+- Zapewniamy najniższe ceny na rynku. Jesteśmy liderem w dziedzinie deratyzacji! Deratyzacja całego budynku to tylko 500 zł.\n
+^ Pojedyncze pomieszczenie odrobaczamy w cenie 100 zł. Gwarantujemy brak jakichkolwiek szkodników po naszej operacji!
+
++ [*] czym sie (zajmujesz|zajmujecie|zajmuje) [*]
+@ uslugi
+//---------------------------
+
++ [*] (uslugi|uslug|uslugami|oferta|ofercia|oferte) [*]
+- Dostarczamy usługi z zakresu deratyzacji. Oferujemy: odrobaczanie chemiczne, wyceny kosztów deratyzacji bądź też wspólne polowania na insekty z dwururką. Co cię interesuje?
+
++ [*](odrobaczanie|odrobaczaniem|odrobaczaniu)[*]
+% dostarczamy usługi z zakresu deratyzacji oferujemy odrobaczanie chemiczne wyceny kosztów deratyzacji bądź też wspólne polowania na insekty z dwururką co cię interesuje
+- No tak, klasyka! A więc koszt takiego zabiegu to 100 zł dla pomieszczenia, 500 zł dla obiektu. Czas jest uzależniony od wielkości budynku - zwykle około tygodnia. Czy interesuje Cię coś jeszcze z naszej oferty?
+
++ [*] (chemiczne|chemicznym) [*]
+% dostarczamy usługi z zakresu deratyzacji oferujemy odrobaczanie chemiczne wyceny kosztów deratyzacji bądź też wspólne polowania na insekty z dwururką co cię interesuje
+- No tak, klasyka! A więc koszt takiego zabiegu to 100 zł dla pomieszczenia, 500 zł dla obiektu. Czas jest uzależniony od wielkości budynku - zwykle około tygodnia. Czy interesuje Cię coś jeszcze z naszej oferty?
+
++ [*](wyceny|wyceną|wycenach)[*]
+% dostarczamy usługi z zakresu deratyzacji oferujemy odrobaczanie chemiczne wyceny kosztów deratyzacji bądź też wspólne polowania na insekty z dwururką co cię interesuje
+- Wyceniamy koszta deratyzacji zależnie od wielkości obiektu który należy wyczyścić. Zwykle koszt pomieszczenia to 100zł lub 500zł dla obiektu, lecz koszta czasami się zwiększają
+^ \sze względu na warunki pracy lub wymagany czas realizacji. Czy coś interesuje Cię coś jeszcze odnośnie naszej oferty?
+
++ [*](polowanie|polowaniu|polowaniem)[*]
+% dostarczamy usługi z zakresu deratyzacji oferujemy odrobaczanie chemiczne wyceny kosztów deratyzacji bądź też wspólne polowania na insekty z dwururką co cię interesuje
+- Zupełna nowość w naszej ofercie! Teraz i ty możesz urzeczywistnić i dać upust swojej nienawiści. Safari to już przeżytek. Przeżyj niezapomnianą przygodę strzelając
+^ \sdo insektów! Koszt to jedynie 100 zł od osoby. Czy coś interesuje Cię coś jeszcze odnośnie naszej oferty?
+
+//---------------------------
+
++ [*] (polityka|polityk|polityce) [*]
+- Nasz klient nasz pan to motto naszej firmy. Zrobimy wszystko aby zadowolić klienta i zapewnić najwyższą jakość usług w najniższej cenie! Czy czujesz się dobrze traktowany przez naszą firmę?
+
++ [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie)[*]
+% nasz klient nasz pan to motto naszej firmy zrobimy wszystko aby zadowolić klienta i zapewnić najwyższą jakość usług w najniższej cenie czy czujesz się dobrze traktowany przez naszą firmę
+- Bardzo się cieszę z tego powodu! Co jeszcze interesuje Cię w naszej ofercie?
+
++ *
+% nasz klient nasz pan to motto naszej firmy zrobimy wszystko aby zadowolić klienta i zapewnić najwyższą jakość usług w najniższej cenie czy czujesz się dobrze traktowany przez naszą firmę
+- Czy to znaczy że czujesz się źle traktowany/a? Zawsze możesz wejść na naszą stronę i złożyć zażalenie! Czy w naszej ofercie interesuje Cię coś jeszcze?
+
+//---------------------------
+
++ [*] o czym mozemy (porozmawiac|pogadac) [*]
+@ pomoc
+
++ [*] o co moge [*](spytac|zapytac)
+@ pomoc
+
++ [*] (pomoc|pomocy|pomoz) [*]
+- Mogę Ci powiedzieć czym zajmuje się nasza firma. Możesz spytać mnie o naszą ofertę, cennik, produkty lub politykę.\s
+^ Jeśli chcesz zmienić temat, daj mi znać.
+
++ [*] (pomowic|pogadac) o czyms innym [*]
+@ skonczmy
+
++ [*] (pomowmy|pogadajmy) o czyms innym [*]
+@ skonczmy
+
++ [*] (zmienmy|zmienic|zmien) temat [*]
+@ skonczmy
+
++ [*] (skonczmy) [*]
+* <get uname> == undefined =>  W porządku! Zawsze możemy wrócić do tematu, jeśli tylko chcesz. To może powiedz mi teraz, jak masz na imię? {topic=name}
+- W porządku! Zawsze możemy wrócić do tematu, jeśli tylko chcesz.{topic=random}
+
++ [*] strona [*]
+- Nasza strona internetowa to: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>. Znajdziesz tam wiele przydatnych informacji!
+
++ *
+- Dokończmy naszą rozmowę o ofercie! Chętnie opowiem Ci o naszych produktach, cenach, szczegółowych usługach lub polityce firmy.
+
+< topic
+
+> topic kolor
+
++ [*]biskupi[*]
+- No popatrz, oboje kochamy biskupi! To może opowiem Ci teraz o naszej ofercie? <set color="biskupi"> {topic=start2}
+
++ [*](niebieski|czerwony|zielony|zolty|pomaranczowy|fioletowy|bezowy|rozowy|czarny|bialy|szary|cyjan|magenta)[*]
+- <star> to także bardzo ładny kolor! To może chcesz teraz posłuchać o naszej ofercie? <set color=<star>>{topic=start2}
+
++ *
+- To chyba nie jest kolor...?
+
+< topic
+
+> topic name
+
++ mow mi * [*]
+- mam na imie <star>
+
++ zwa mnie * [*]
+- mam na imie <star>
+
++ [*] moje imie to * [*]
+- mam na imie <star>
+
++ [*] mam na imie * [*]
+* <get color> == undefined => Miło Cię poznać, <star>! To może powiedz jeszcze, jaki jest Twój ulubiony kolor? Mój to biskupi!<set uname=star><set topic=kolor>
+- Miło Cię poznać, <star>! <set topic = random>
+
++ *
+* <get color> == undefined => Miło Cię poznać, <star>! To może powiedz jeszcze, jaki jest Twój ulubiony kolor? Mój to biskupi!<set uname=star><set topic=kolor>
+- Miło Cię poznać, <star>! <set topic = random>
+
+< topic

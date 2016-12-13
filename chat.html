@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CorpoBot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./build/chat.css">
+<link href="./build/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="./build/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="./build/datadumper.js"></script>
+<script type="text/javascript" src="./build/rivescript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qwest/4.4.2/qwest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qwest/4.4.2/qwest.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="./build/bootstrap.min.js"></script>
+<script type="text/javascript" src="./build/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="build/sweetalert.css">
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+	<h1><b>CorpoBot</b></h1>
+	<p><b>CorpoBot</b> to projekt z Przetwarzania Języka Naturalnego. Jest to bot <b>fikcyjnej</b> firmy Corpo, mający za zadanie udzielanie informacji o tejże firmie. Miłej rozmowy!</br>
+	Po rozmowie użyj przycisku "<b>zapisz logi</b>" aby pomóc mi ulepszać mojego bota!</p>
+</div>
+
+
+<main>
+	<div class="container">
+		<fieldset>			
+			<legend>Okno czatu</legend>
+			<div id="dialogue"></div>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Wyślij wiadomość</legend>
+
+			<table class="input-table">
+				<form id="form" onsubmit="return false;">
+				<td class="text-box">
+					<input class="form-control" type="text" name="message" id="message" autocomplete="off" required>
+				</td>
+				<td class="send-button">
+					<button class="btn btn-default" type="submit">Wyślij</button>
+				</td>	
+				</form>		
+
+				<form onsubmit="return false;">
+				<td class="send-button">
+					<button class="btn btn-default" id="save-logs">Zapisz logi</button>
+				</td>
+				</form>
+			</table>
+		</fieldset>
+	</div>
+</main>
+
+<!--- JS part -->
+<div align="right">
+  <i>by Maciej Wanat&nbsp;&nbsp;</i>
+</div> 
+
+<script type="text/javascript">
+// Handle the debug mode query string parameter.
+var debugMode = false;
+if (window.location.search.indexOf("debug=1") > -1) {
+	$("#toggle").val("Disable Debug Mode");
+	debugMode = true;
+} else {
+	$("#toggle").val("Enable Debug Mode");
+}
+
+// Create our RiveScript interpreter.
+var rs = new RiveScript({
+	utf8: true,
+	debug:   debugMode,
+	onDebug: onDebug	
+});
+
+rs.unicodePunctuation = new RegExp(/[.,!?;:]/g); //?
+// This won't work on the web!
+//rs.loadDirectory("brain");
+
+// Load our files from the brain/ folder.
+rs.loadFile([
+	"brain/brain.rive",
+	"brain/CorpoBot.rive",
+	"brain/chitchat.rive",
+	"brain/topics.rive"
+	], on_load_success, on_load_error);
+
+// You can register objects that can then be called 
+// using <call></call> syntax
+rs.setSubroutine('fancyJSObject', function(rs, args){
+	// doing complex stuff here
+});
+
+function on_load_success () {
+	$("#message").removeAttr("disabled");
+	$("#message").attr("placeholder", "Wyślij wiadomość");
+	$("#message").focus();
+	$("#dialogue").append("<div><span class='bot'>CorpoBot: </span>Witaj! Mam na imię CorpoBot i moim zadaniem jest przybliżyć Ci ofertę firmy Corpo. Jeśli zabraknie Ci pomysłów o czym moglibyśmy pogadać, poproś mnie o pomoc. Czy chcesz abym przedstawił Ci naszą ofertę?</div>");
+
+	// Now to sort the replies!
+	rs.sortReplies();
+}
+
+function on_load_error (err) {
+	console.log("Loading error: " + err);
+}
+
+function replacePl(text) {
+    return text.replace(/ą/g, 'a').replace(/Ą/g, 'A')
+        .replace(/ć/g, 'c').replace(/Ć/g, 'C')
+        .replace(/ę/g, 'e').replace(/Ę/g, 'E')
+        .replace(/ł/g, 'l').replace(/Ł/g, 'L')
+        .replace(/ń/g, 'n').replace(/Ń/g, 'N')
+        .replace(/ó/g, 'o').replace(/Ó/g, 'O')
+        .replace(/ś/g, 's').replace(/Ś/g, 'S')
+        .replace(/ż/g, 'z').replace(/Ż/g, 'Z')
+        .replace(/ź/g, 'z').replace(/Ź/g, 'Z');
+}
+
+// Handle sending a message to the bot.
+function sendMessage () {
+	var text = $("#message").val();
+	$("#message").val("");
+	$("#dialogue").append("<div><span class='user'>Ty:</span> " + text + "</div>");
+	
+	text = replacePl(text);
+
+	try {
+	var reply = rs.reply("soandso", text);
+	reply = reply.replace(/\n/g, "<br>");
+	$("#dialogue").append("<div><span class='bot'>CorpoBot:</span> " + reply + "</div>");
+
+	var objDiv = document.getElementById("dialogue");
+	objDiv.scrollTop = objDiv.scrollHeight;
+	//non working animation
+	//objDiv.animate({ scrollTop: objDiv.scrollHeight }, 1000);
+	//$("#dialogue").animate({ scrollTop: $("#dialogue").height() }, 1000);
+	} catch(e) {
+		window.alert(e.message + "\n" + e.line);
+		console.log(e);
+	}
+
+	return false;
+}
+
+// Button that turns debugging on and off.
+function toggleDebug () {
+	if (debugMode) {
+		window.location = "?debug=0";
+	} else {
+		window.location = "?debug=1";
+	}
+}
+
+function onDebug(message) {
+	if (debugMode) {
+		$("#debug").append("<div>[RS] " + escapeHtml(message) + "</div>");
+	}
+}
+
+function escapeHtml(text) {
+	return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+// -------------- ZAPIS LOGÓW ------------------- //
+
+function savelogs(log) {
+
+		qwest.post("https://s416196.students.wmi.amu.edu.pl/CorpoBot/log.php",{ data: log }, {
+            cache: true,
+            dataType: 'json'
+        })
+        .then(function(xhr, response) {
+       		console.log("send a log");
+            
+        })
+        .catch(function(e, xhr, response) {
+            console.log("POST Error:" + e);
+        });
+	    
+}
+
+
+function getLogData(){
+	var log = {
+	    messages: []
+	};
+
+	var dialogue = document.getElementById("dialogue");
+	var children = dialogue.children;
+
+	for (var i = 0; i < children.length; i++) {
+		log.messages.push({
+			"text" : children[i].textContent
+		})
+	} 
+
+	return log;
+}
+
+form.addEventListener('submit', function(){
+	sendMessage();
+	return false;
+});
+
+
+var saveLogButton = document.getElementById("save-logs");
+saveLogButton.addEventListener('click',function(){
+	savelogs(getLogData())
+	swal("Dzięki!")
+	//alert("Dzięki!");
+});
+</script>
+
+</body>
+</html>

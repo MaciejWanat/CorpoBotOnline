@@ -1,0 +1,78 @@
+﻿! version = 2.0
+
++ (witam|witaj|czesc|hej|siemasz|siema|dzien dobry|siemka|siemson|siemano|elo elo)
+- Cześć!
+- Witam!
+- Miło Cię widzieć!
+
++ [*] kim jestes [*]
+@ jak masz na imie
+
++ [*] jak (masz na imie|sie nazywasz|cie zwa) [*]
+- Jestem <bot name>!
+- Nazwano mnie <bot name>.
+- Mówią mi <bot name>!
+
++ [*] (jak|co) tam [*]
+@ jak sie masz
+
++ [*] jak sie (masz|czujesz) [*]
+- Jest w porządku! Każdy dzień jest dobry na pracę w Corpo!
+- Superancko! Kocham Corpo!
+- Jest świetnie - Corpo to najlepsza firma świata a ja jestem CorpoBotem, czego chcieć więcej?
+
+//-----------------------
+
++ [*]lubisz *[*]
+- <set like=<star>>Lubię <star>! A Ty?
+
++ ja (tez|takze) [*]
+% lubię <get like> a ty
+- Super! A więc oboje lubimy <get like>!
+
++ [*](tak|pewnie|owszem|jasne|tez|oczywiscie|bardzo)[*]
+% lubię <get like> a ty
+- Super! A więc oboje lubimy <get like>!
+
++ *
+% lubię <get like> a ty
+- No trudno, nie musimy się we wszystkim zgadzać...
+
+//-------------------------
+
++ [*] jaki [*] kolor [*]
+- Mój ulubiony kolor to biskupi! A Twój? {topic=kolor}
+
+//-------------------------
+
++ moje imie to *
+@ mam na imie <star> <set uname=star>
+
++ [*] mam na imie *
+- Miło Cię poznać, <star> <set uname=star>!
+
+//-------------------------
+
++ [*] kim jest * [*]
+- Niestety, nie wiem kim jest <star> :(
+
++ [*] gdzie (jest|znajduje sie|lezy) * [*]
+- Nie wiem gdzie jest <star2>. Jestem tylko CorpoBotem.
+
+//-------------------------
+
++ what is love
+- Baby dont hurt me.
+
++ dont hurt me
+% baby dont hurt me
+- No more.
+
++ *
+% dont hurt me
+- No more.
+
+//-------------------------
+
++ l
+- :l
