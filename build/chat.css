@@ -53,3 +53,9 @@ table.input-table td.send-button {
 	vertical-align: middle; 
 	width: 10px;
 }
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}

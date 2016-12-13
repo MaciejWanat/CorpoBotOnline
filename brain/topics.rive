@@ -2,7 +2,7 @@
 
 > topic start
 
-  + [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|poprosze|chce)[*]
+  + [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|poprosze|chce|dobra)[*]
   - Porozmawiajmy więc o naszej ofercie!\n
     ^ W naszej ofercie znajdują się wszelkie możliwe usługi, jeśli masz problemy z insektami. Deratyzacja obiektu\s
     ^ to koszt 500 zł. Pojedyncze pomieszczenie to koszt 100 zł.\n
@@ -24,7 +24,7 @@
 
 > topic start2
 
-  + [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|chce)[*]
+  + [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|chce|dobra)[*]
   - Porozmawiajmy więc o naszej ofercie!\n
     ^ W naszej ofercie znajdują się wszelkie możliwe usługi, jeśli masz problemy z insektami. Deratyzacja obiektu\s
     ^ to koszt 500 zł. Pojedyncze pomieszczenie to koszt 100 zł.\n
@@ -34,7 +34,7 @@
     //<a href="https://s416196.students.wmi.amu.edu.pl/joomla/">kliknij tutaj!</a>
 
   + [*] nie chce [*]
-  - Szkoda... W końcu do tego zostałem stworzony. Może w takim razie powiesz mi, jak masz na imię?{topic=name}
+  @ nie
   
   + [*](nie|odmawiam|bynajmniej)[*]
   - Szkoda... Obawiam się że to jest moje najlepsze zastosowanie. Daj znać, jeśli jednak chciałbyś coś usłyszeć o naszej ofercie.{topic=random}
@@ -46,8 +46,34 @@
 
 > topic oferta
 
++ [*](telefon|telefonu)[*]
+@ numer
+
++ [*]numer[*]
+- Czy interesuje Cię numer telefonu do naszej firmy? Poszukaj go na stronie: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>
+
++ [*](deratyzacja|robaki)[*]
+- Deratyzacja to proces usuwania szkodników, robaków i gryzoni. Tym właśnie się zajmujemy! Czy coś jeszcze interesuje Cię z naszej oferty?
+
++ [*] (drogo|drogi|drogie) [*]
+- Uważasz że nasze usługi są zbyt drogie? Bardzo nam przykro z tego powodu, zapewniamy że taniej się nie da!
+
++ [*] (da sie|nieprawda|wcale nie) [*]
+% uważasz że nasze usługi są zbyt drogie bardzo nam przykro z tego powodu zapewniamy że taniej się nie da
+- Prosimy w takim przypadku przejść na naszą stronę internetową i złożyć zażalenie: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>
+
+//--------------------------
+
 + [*] (produkt|produkty|produktow|produktach) [*]
 - Używamy tylko produktów najwyższej jakości. Nasi dostawcy to SuperSpray oraz KillMouse, co gwarantuje nam najwyższą jakość usług!
+
++ [*]superspray[*]
+- SuperSpray to sprej nie zwykły sprej. To przyszłość w areozolu. Wystarczy prysk i wszystkie insekty umierają.
+
++ [*]killmouse[*]
+- KillMouse to firma zajmujaca się dostawą tresowanych kotów. Gwarancja satysfakcji bez środków chemicznych!
+
+//--------------------------
 
 + [*] (cena|ceny|cen|cennik|cenach) [*]
 - Zapewniamy najniższe ceny na rynku. Jesteśmy liderem w dziedzinie deratyzacji! Deratyzacja całego budynku to tylko 500 zł.\n
@@ -55,27 +81,24 @@
 
 + [*] czym sie (zajmujesz|zajmujecie|zajmuje) [*]
 @ uslugi
+
 //---------------------------
 
 + [*] (uslugi|uslug|uslugami|oferta|ofercia|oferte) [*]
 - Dostarczamy usługi z zakresu deratyzacji. Oferujemy: odrobaczanie chemiczne, wyceny kosztów deratyzacji bądź też wspólne polowania na insekty z dwururką. Co cię interesuje?
 
 + [*](odrobaczanie|odrobaczaniem|odrobaczaniu)[*]
-% dostarczamy usługi z zakresu deratyzacji oferujemy odrobaczanie chemiczne wyceny kosztów deratyzacji bądź też wspólne polowania na insekty z dwururką co cię interesuje
-- No tak, klasyka! A więc koszt takiego zabiegu to 100 zł dla pomieszczenia, 500 zł dla obiektu. Czas jest uzależniony od wielkości budynku - zwykle około tygodnia. Czy interesuje Cię coś jeszcze z naszej oferty?
+- No tak, klasyka! Koszt zabiegu odrobacznia to 100 zł dla pomieszczenia, 500 zł dla obiektu. Czas jest uzależniony od wielkości budynku - zwykle około tygodnia. Czy interesuje Cię coś jeszcze z naszej oferty?
 
 + [*] (chemiczne|chemicznym) [*]
-% dostarczamy usługi z zakresu deratyzacji oferujemy odrobaczanie chemiczne wyceny kosztów deratyzacji bądź też wspólne polowania na insekty z dwururką co cię interesuje
-- No tak, klasyka! A więc koszt takiego zabiegu to 100 zł dla pomieszczenia, 500 zł dla obiektu. Czas jest uzależniony od wielkości budynku - zwykle około tygodnia. Czy interesuje Cię coś jeszcze z naszej oferty?
+- No tak, klasyka! Koszt zabiegu odrobacznia to 100 zł dla pomieszczenia, 500 zł dla obiektu. Czas jest uzależniony od wielkości budynku - zwykle około tygodnia. Czy interesuje Cię coś jeszcze z naszej oferty?
 
 + [*](wyceny|wyceną|wycenach)[*]
-% dostarczamy usługi z zakresu deratyzacji oferujemy odrobaczanie chemiczne wyceny kosztów deratyzacji bądź też wspólne polowania na insekty z dwururką co cię interesuje
 - Wyceniamy koszta deratyzacji zależnie od wielkości obiektu który należy wyczyścić. Zwykle koszt pomieszczenia to 100zł lub 500zł dla obiektu, lecz koszta czasami się zwiększają
 ^ \sze względu na warunki pracy lub wymagany czas realizacji. Czy coś interesuje Cię coś jeszcze odnośnie naszej oferty?
 
-+ [*](polowanie|polowaniu|polowaniem)[*]
-% dostarczamy usługi z zakresu deratyzacji oferujemy odrobaczanie chemiczne wyceny kosztów deratyzacji bądź też wspólne polowania na insekty z dwururką co cię interesuje
-- Zupełna nowość w naszej ofercie! Teraz i ty możesz urzeczywistnić i dać upust swojej nienawiści. Safari to już przeżytek. Przeżyj niezapomnianą przygodę strzelając
++ [*](polowanie|polowaniu|polowaniem|polowac|polowania)[*]
+- Jest to zupełna nowość w naszej ofercie! Teraz i ty możesz urzeczywistnić swoja nienawiść i dać jej upust. Safari to już przeżytek. Przeżyj niezapomnianą przygodę strzelając
 ^ \sdo insektów! Koszt to jedynie 100 zł od osoby. Czy coś interesuje Cię coś jeszcze odnośnie naszej oferty?
 
 //---------------------------
@@ -116,15 +139,26 @@
 * <get uname> == undefined =>  W porządku! Zawsze możemy wrócić do tematu, jeśli tylko chcesz. To może powiedz mi teraz, jak masz na imię? {topic=name}
 - W porządku! Zawsze możemy wrócić do tematu, jeśli tylko chcesz.{topic=random}
 
-+ [*] strona [*]
++ [*] (strona|strony|strone) [*]
 - Nasza strona internetowa to: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>. Znajdziesz tam wiele przydatnych informacji!
 
++ [*](chce|pragne|chcialbym|czy mozemy) [*] innym [*]
+% dokończmy naszą rozmowę o ofercie chętnie opowiem ci o naszych produktach cenach szczegółowych usługach lub polityce firmy jeśli nie chcesz już rozmawiać o ofercie daj znać
+- No dobrze, zmieńmy więc temat... Ale pamiętaj - zostałem stworzony do opowiadania o firmie!{topic=random}
+
++ [*](nie)[*]
+% dokończmy naszą rozmowę o ofercie chętnie opowiem ci o naszych produktach cenach szczegółowych usługach lub polityce firmy jeśli nie chcesz już rozmawiać o ofercie daj znać
+- No dobrze, zmieńmy więc temat... Ale pamiętaj - zostałem stworzony do opowiadania o firmie!{topic=random}
+
 + *
-- Dokończmy naszą rozmowę o ofercie! Chętnie opowiem Ci o naszych produktach, cenach, szczegółowych usługach lub polityce firmy.
+- Dokończmy naszą rozmowę o ofercie! Chętnie opowiem Ci o naszych produktach, cenach, szczegółowych usługach lub polityce firmy. Jeśli nie chcesz już rozmawiać o ofercie, daj znać.
 
 < topic
 
 > topic kolor
+
++ [*](tez)[*]
+@ biskupi
 
 + [*]biskupi[*]
 - No popatrz, oboje kochamy biskupi! To może opowiem Ci teraz o naszej ofercie? <set color="biskupi"> {topic=start2}
@@ -132,21 +166,47 @@
 + [*](niebieski|czerwony|zielony|zolty|pomaranczowy|fioletowy|bezowy|rozowy|czarny|bialy|szary|cyjan|magenta)[*]
 - <star> to także bardzo ładny kolor! To może chcesz teraz posłuchać o naszej ofercie? <set color=<star>>{topic=start2}
 
++ [*](nie|nie powiem)[*]
+- Nie bądź taki, powiedz jaki to kolor!
+
++ [*] (corpo|firma|firmie|oferta|ofercie) [*]
+- Porozmawiajmy więc o naszej ofercie!\n
+  ^ W naszej ofercie znajdują się wszelkie możliwe usługi, jeśli masz problemy z insektami. Deratyzacja obiektu\s
+  ^ to koszt 500 zł. Pojedyncze pomieszczenie to koszt 100 zł.\n
+  ^ Szczegółową ofertę znajdziesz na naszej stronie internetowej: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>\n
+  ^ Co jeszcze chcesz wiedzieć? Chętnie opowiem Ci o naszych produktach, cenach, szczegółowych usługach i polityce firmy!
+  ^ \sJeśli chcesz zmienić temat, po prostu daj mi znać.{topic=oferta}
+  //<a href="https://s416196.students.wmi.amu.edu.pl/joomla/">kliknij tutaj!</a>
+
++ [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|chce|dobra)[*]
+% to chyba nie jest kolor z drugiej strony znam ich tylko trochę chcesz wiedzieć jakie kolory znam
+@ jakie
+
++ [*]nie[*]
+% to chyba nie jest kolor z drugiej strony znam ich tylko trochę chcesz wiedzieć jakie kolory znam
+- Okej, widzę że nie interesują Cie kolory... To może zainteresuje Cię nasza oferta?{topic=start2}
+
++ [*]jakie[*]
+- Znane mi kolory to: niebieski, czerwony, zielony, żółty, pomarańczowy, fioletowy, beżowy, różowy, czarny, biały, szary, cyjan oraz magenta!
+
 + *
-- To chyba nie jest kolor...?
+- To chyba nie jest kolor...? Z drugiej strony znam ich tylko trochę, chcesz wiedzieć jakie kolory znam?
 
 < topic
 
 > topic name
 
++ [*](nie|nie powiem)[*]
+- Nie bądź taki, powiedz jak masz na imię!
+
 + mow mi * [*]
-- mam na imie <star>
+@ mam na imie <star>
 
 + zwa mnie * [*]
-- mam na imie <star>
+@ mam na imie <star>
 
 + [*] moje imie to * [*]
-- mam na imie <star>
+@ mam na imie <star>
 
 + [*] mam na imie * [*]
 * <get color> == undefined => Miło Cię poznać, <star>! To może powiedz jeszcze, jaki jest Twój ulubiony kolor? Mój to biskupi!<set uname=star><set topic=kolor>
@@ -157,3 +217,16 @@
 - Miło Cię poznać, <star>! <set topic = random>
 
 < topic
+
+> topic like
+
++ ja (tez|takze) [*]
+- Super! A więc oboje lubimy <get like>!{topic=random}
+
++ [*](tak|pewnie|owszem|jasne|tez|oczywiscie|bardzo)[*]
+- Super! A więc oboje lubimy <get like>!{topic=random}
+
++ *
+- No trudno, nie musimy się we wszystkim zgadzać...{topic=random}
+
+<topic

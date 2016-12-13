@@ -5,6 +5,77 @@
 - Witam!
 - Miło Cię widzieć!
 
+//------------------
+
++ [*](szczur|szczury|gryzonie|robaki|dezynsekcja|deratyzacja)[*]
+- Jeśli chcesz, mogę opowiedzieć o naszej ofercie - czy chcesz o niej posłuchać? {topic=start2}
+
+//------------------
+
++ [*](kocham cie|lubie cie)[*]
+- Ty też jesteś super! Zupełnie jak nasza oferta - czy chcesz o niej posłuchać? {topic=start2}
+
+//------------------
+
++ [*](kozy|koza|kozami)[*]
+- Osobiście uważam, iż kozy są super.
+
+//------------------
+
++ ok
+- Okey dokey!
+
+//------------------
+
++ [*](niezle|super|elegancko|ekstra|czadowo|czad)[*]
+- No pewnie, że <star>!
+- No raczej, że <star>!
+- Właśnie to miałem na myśli - <star>!
+
+//------------------
+
++ [*]corpobot[*]
+- Corpobot to ja, a moja firma to Corpo! Zostałem stworzony aby opowiadać o ofercie mojej firmy. Czy chcesz porozmawiać o niej porozmawiać??{topic=start2}
+
+//------------------
+
++ [*](muzyka|muzyce|muzyk|rap|metal|jazz|rock|pop)[*]
+- Jako bot nie mam uszu. To stanowczo utrudnia słuchanie muzyki. Ciężko mi rozmawiać na ten temat :(
+
+//------------------
+
++ [*](piwo|wodka|alkohol|gin|tonic|whisky|whiskey|rum|wodke)[*]
+- Jestem botem, nie mogę pić alkoholu... Ale nie mówię że nie piłbym, gdybym mógł!
+
+//------------------
+
++ [*](religia|wyznanie|bog|bogowie|jezus)[*]
+- Religia? Osobiście preferuję <bot believe>. Czy jesteś religijną osobą?
+
++  *
+% religia osobiście preferuję <get believe> czy jesteś religijną osobą
+- Świetnie! Niestety nie mogę kontynuować tej rozmowy ze względu na politykę :(
+
++ [*](szkoda|trudno)[*]
+% świetnie niestety nie mogę kontynuować tej rozmowy ze względu na politykę
+- Mi także jest bardzo przykro :(
+
+//------------------
+
++ [*]twój wiek[*]
+@ ile masz lat
+
++ [*]kiedy [*] stworzony[*]
+@ ile masz lat
+
++ [*]w jakim jesteś wieku[*]
+@ ile masz lat
+
++ [*]ile masz lat[*]
+- Zostałem stworzony w grudniu 2016... Data mojej publikacji to 12.11.2016! 
+
+//------------------
+
 + [*] kim jestes [*]
 @ jak masz na imie
 
@@ -24,19 +95,10 @@
 //-----------------------
 
 + [*]lubisz *[*]
-- <set like=<star>>Lubię <star>! A Ty?
+- <set like=<star>>Lubię <star>! A Ty?{topic=like}
 
-+ ja (tez|takze) [*]
-% lubię <get like> a ty
-- Super! A więc oboje lubimy <get like>!
-
-+ [*](tak|pewnie|owszem|jasne|tez|oczywiscie|bardzo)[*]
-% lubię <get like> a ty
-- Super! A więc oboje lubimy <get like>!
-
-+ *
-% lubię <get like> a ty
-- No trudno, nie musimy się we wszystkim zgadzać...
++ [*]lubisz (nazi|hitlera|nazistow|holokaust|mordowac|zabijac|stalina|smierc|chorobe|choroby|faszystow)[*]
+- To nie brzmi jak coś fajnego...
 
 //-------------------------
 

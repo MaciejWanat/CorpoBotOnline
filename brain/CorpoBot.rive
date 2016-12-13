@@ -22,10 +22,11 @@
 
 //-----------------------
 
-+ [*] corpo [*]
+
++ [*] (corpo|firma|firmie) [*]
 - Corpo to moja ulubiona firma. Oferujemy usługi z zakresu deratyzacji. Czy chcesz dowiedzieć się więcej?
 
-+ [*](tak|pewnie|owszem|jasne|czemu nie|chce)[*]
++ [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|poprosze|chce|dobra)[*]
 % corpo to moja ulubiona firma oferujemy usługi z zakresu deratyzacji czy chcesz dowiedzieć się więcej
 @ oferta
 
@@ -43,6 +44,10 @@
 ^ Co jeszcze chcesz wiedzieć? Chętnie opowiem Ci o naszych produktach, cenach, szczegółowych usługach i polityce firmy!{topic=oferta}
 //<a href="https://s416196.students.wmi.amu.edu.pl/joomla/">kliknij tutaj!</a>
 ^ Jeśli chcesz zmienić temat, po prostu daj mi znać.
+
++ (tak|pewnie|jasne|czemu nie|dobrze|ok|oczywiscie)
+% w porządku zawsze możemy wrócić do tematu jeśli tylko chcesz
+- Okey dokey! Pamiętaj, że jestem stworzony by rozmawiać o naszej ofercie.
 
 + *
 - Nie zrozumiałem, czy mógłbyś inaczej sformułować wypowiedź?
