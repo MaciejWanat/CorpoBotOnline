@@ -1,8 +1,17 @@
 ﻿! version = 2.0
 
 > topic start
+  
+  + [*]nie chce[*]
+  @ nie
 
-  + [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|poprosze|chce|dobra)[*]
+  + [*](nie|odmawiam|bynajmniej)[*]
+  - Szkoda... W końcu do tego zostałem stworzony. Może w takim razie powiesz mi, jak masz na imię?{topic=name}
+
+  + [*]chce[*]
+  @ tak
+
+  + [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|poprosze|dobra|chetnie|ta)[*]
   - Porozmawiajmy więc o naszej ofercie!\n
     ^ W naszej ofercie znajdują się wszelkie możliwe usługi, jeśli masz problemy z insektami. Deratyzacja obiektu\s
     ^ to koszt 500 zł. Pojedyncze pomieszczenie to koszt 100 zł.\n
@@ -10,12 +19,6 @@
     ^ Co jeszcze chcesz wiedzieć? Chętnie opowiem Ci o naszych produktach, cenach, szczegółowych usługach i polityce firmy!
     ^ \sJeśli chcesz zmienić temat, po prostu daj mi znać.{topic=oferta}
     //<a href="https://s416196.students.wmi.amu.edu.pl/joomla/">kliknij tutaj!</a>
-  
-  + [*] nie chce [*]
-  - Szkoda... W końcu do tego zostałem stworzony. Może w takim razie powiesz mi, jak masz na imię?{topic=name}
-
-  + [*](nie|odmawiam|bynajmniej)[*]
-  - Szkoda... W końcu do tego zostałem stworzony. Może w takim razie powiesz mi, jak masz na imię?{topic=name}
 
   + *
   - Powiedz mi, czy chcesz porozmawiać o ofercie!
@@ -24,7 +27,16 @@
 
 > topic start2
 
-  + [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|chce|dobra)[*]
+  + nie chce
+  @ nie
+  
+  + [*](nie|odmawiam|bynajmniej)[*]
+  - Szkoda... Obawiam się że to jest moje najlepsze zastosowanie. Daj znać, jeśli jednak chciałbyś coś usłyszeć o naszej ofercie.{topic=random}
+
+  + [*]chce[*]
+  @ tak
+
+  + [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|dobra|chetnie|ta)[*]
   - Porozmawiajmy więc o naszej ofercie!\n
     ^ W naszej ofercie znajdują się wszelkie możliwe usługi, jeśli masz problemy z insektami. Deratyzacja obiektu\s
     ^ to koszt 500 zł. Pojedyncze pomieszczenie to koszt 100 zł.\n
@@ -33,12 +45,6 @@
     ^ \sJeśli chcesz zmienić temat, po prostu daj mi znać.{topic=oferta}
     //<a href="https://s416196.students.wmi.amu.edu.pl/joomla/">kliknij tutaj!</a>
 
-  + [*] nie chce [*]
-  @ nie
-  
-  + [*](nie|odmawiam|bynajmniej)[*]
-  - Szkoda... Obawiam się że to jest moje najlepsze zastosowanie. Daj znać, jeśli jednak chciałbyś coś usłyszeć o naszej ofercie.{topic=random}
-
   + *
   - Powiedz mi, czy chcesz porozmawiać o ofercie!
 
@@ -46,15 +52,24 @@
 
 > topic oferta
 
++ [*](do widzenia|narazie|pa|dowidzenia|zegnam|zegnaj)[*]
+- Trzymaj się! Zapraszam do ponownych rozmów!
+
++ [*](kapibar|kapibary)[*]
+- Dla naszej firmy to zbyt poważna sprawa. 
+
++ [*](reklamacje|reklamacja)[*]
+- Reklamacje możliwe są na naszej stronie internetowej: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>
+
 + [*](telefon|telefonu)[*]
 @ numer
 
 + [*]numer[*]
 - Czy interesuje Cię numer telefonu do naszej firmy? Poszukaj go na stronie: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>
 
-+ [*](deratyzacja|robaki)[*]
-- Deratyzacja to proces usuwania szkodników, robaków i gryzoni. Tym właśnie się zajmujemy! Czy coś jeszcze interesuje Cię z naszej oferty?
-
++ [*](deratyzacja|robaki|deratyzacj|deratyzacje)[*]
+- Deratyzacja to proces usuwania szkodników, robaków i gryzoni. Tym właśnie się zajmujemy! Co jeszcze z naszej oferty Cię interesuje?
+ z 
 + [*] (drogo|drogi|drogie) [*]
 - Uważasz że nasze usługi są zbyt drogie? Bardzo nam przykro z tego powodu, zapewniamy że taniej się nie da!
 
@@ -68,14 +83,14 @@
 - Używamy tylko produktów najwyższej jakości. Nasi dostawcy to SuperSpray oraz KillMouse, co gwarantuje nam najwyższą jakość usług!
 
 + [*]superspray[*]
-- SuperSpray to sprej nie zwykły sprej. To przyszłość w areozolu. Wystarczy prysk i wszystkie insekty umierają.
+- SuperSpray to sprej nie zwykły sprej. To przyszłość w areozolu. Wystarczy prysk i wszystkie insekty umierają. Co jeszcze z naszej oferty Cię interesuje?
 
 + [*]killmouse[*]
-- KillMouse to firma zajmujaca się dostawą tresowanych kotów. Gwarancja satysfakcji bez środków chemicznych!
+- KillMouse to firma zajmujaca się dostawą tresowanych kotów. Gwarancja satysfakcji bez środków chemicznych! Co jeszcze z naszej oferty Cię interesuje?
 
 //--------------------------
 
-+ [*] (cena|ceny|cen|cennik|cenach) [*]
++ [*] (cena|ceny|cen|cennik|cenach|koszt|kosztuje) [*]
 - Zapewniamy najniższe ceny na rynku. Jesteśmy liderem w dziedzinie deratyzacji! Deratyzacja całego budynku to tylko 500 zł.\n
 ^ Pojedyncze pomieszczenie odrobaczamy w cenie 100 zł. Gwarantujemy brak jakichkolwiek szkodników po naszej operacji!
 
@@ -84,35 +99,35 @@
 
 //---------------------------
 
-+ [*] (uslugi|uslug|uslugami|oferta|ofercia|oferte) [*]
++ [*] (uslugi|uslug|uslugami|uslugach|oferta|ofercie|oferte|oferujecie) [*]
 - Dostarczamy usługi z zakresu deratyzacji. Oferujemy: odrobaczanie chemiczne, wyceny kosztów deratyzacji bądź też wspólne polowania na insekty z dwururką. Co cię interesuje?
 
 + [*](odrobaczanie|odrobaczaniem|odrobaczaniu)[*]
-- No tak, klasyka! Koszt zabiegu odrobacznia to 100 zł dla pomieszczenia, 500 zł dla obiektu. Czas jest uzależniony od wielkości budynku - zwykle około tygodnia. Czy interesuje Cię coś jeszcze z naszej oferty?
+- No tak, klasyka! Koszt zabiegu odrobacznia to 100 zł dla pomieszczenia, 500 zł dla obiektu. Czas jest uzależniony od wielkości budynku - zwykle około tygodnia. Co jeszcze z naszej oferty Cię interesuje?
 
 + [*] (chemiczne|chemicznym) [*]
-- No tak, klasyka! Koszt zabiegu odrobacznia to 100 zł dla pomieszczenia, 500 zł dla obiektu. Czas jest uzależniony od wielkości budynku - zwykle około tygodnia. Czy interesuje Cię coś jeszcze z naszej oferty?
+- No tak, klasyka! Koszt zabiegu odrobacznia to 100 zł dla pomieszczenia, 500 zł dla obiektu. Czas jest uzależniony od wielkości budynku - zwykle około tygodnia. Co jeszcze z naszej oferty Cię interesuje?
 
 + [*](wyceny|wyceną|wycenach)[*]
 - Wyceniamy koszta deratyzacji zależnie od wielkości obiektu który należy wyczyścić. Zwykle koszt pomieszczenia to 100zł lub 500zł dla obiektu, lecz koszta czasami się zwiększają
-^ \sze względu na warunki pracy lub wymagany czas realizacji. Czy coś interesuje Cię coś jeszcze odnośnie naszej oferty?
+^ \sze względu na warunki pracy lub wymagany czas realizacji. Co jeszcze z naszej oferty Cię interesuje?
 
 + [*](polowanie|polowaniu|polowaniem|polowac|polowania)[*]
 - Jest to zupełna nowość w naszej ofercie! Teraz i ty możesz urzeczywistnić swoja nienawiść i dać jej upust. Safari to już przeżytek. Przeżyj niezapomnianą przygodę strzelając
-^ \sdo insektów! Koszt to jedynie 100 zł od osoby. Czy coś interesuje Cię coś jeszcze odnośnie naszej oferty?
+^ \sdo insektów! Koszt to jedynie 100 zł od osoby. Co jeszcze z naszej oferty Cię interesuje?
 
 //---------------------------
 
 + [*] (polityka|polityk|polityce) [*]
 - Nasz klient nasz pan to motto naszej firmy. Zrobimy wszystko aby zadowolić klienta i zapewnić najwyższą jakość usług w najniższej cenie! Czy czujesz się dobrze traktowany przez naszą firmę?
 
-+ [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie)[*]
++ [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|ta)[*]
 % nasz klient nasz pan to motto naszej firmy zrobimy wszystko aby zadowolić klienta i zapewnić najwyższą jakość usług w najniższej cenie czy czujesz się dobrze traktowany przez naszą firmę
-- Bardzo się cieszę z tego powodu! Co jeszcze interesuje Cię w naszej ofercie?
+- Bardzo się cieszę z tego powodu! Co jeszcze z naszej oferty Cię interesuje?
 
 + *
 % nasz klient nasz pan to motto naszej firmy zrobimy wszystko aby zadowolić klienta i zapewnić najwyższą jakość usług w najniższej cenie czy czujesz się dobrze traktowany przez naszą firmę
-- Czy to znaczy że czujesz się źle traktowany/a? Zawsze możesz wejść na naszą stronę i złożyć zażalenie! Czy w naszej ofercie interesuje Cię coś jeszcze?
+- Czy to znaczy że czujesz się źle traktowany/a? Zawsze możesz wejść na naszą stronę i złożyć zażalenie! Co jeszcze z naszej oferty Cię interesuje?
 
 //---------------------------
 
@@ -137,18 +152,18 @@
 
 + [*] (skonczmy) [*]
 * <get uname> == undefined =>  W porządku! Zawsze możemy wrócić do tematu, jeśli tylko chcesz. To może powiedz mi teraz, jak masz na imię? {topic=name}
-- W porządku! Zawsze możemy wrócić do tematu, jeśli tylko chcesz.{topic=random}
+- W porządku! Zawsze możemy wrócić do tematu oferty, jeśli tylko chcesz.{topic=random}
 
 + [*] (strona|strony|strone) [*]
 - Nasza strona internetowa to: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>. Znajdziesz tam wiele przydatnych informacji!
 
 + [*](chce|pragne|chcialbym|czy mozemy) [*] innym [*]
 % dokończmy naszą rozmowę o ofercie chętnie opowiem ci o naszych produktach cenach szczegółowych usługach lub polityce firmy jeśli nie chcesz już rozmawiać o ofercie daj znać
-- No dobrze, zmieńmy więc temat... Ale pamiętaj - zostałem stworzony do opowiadania o firmie!{topic=random}
+- No dobrze, zmieńmy więc temat, jeśli nie chcesz rozmawiać o ofercie... Ale pamiętaj - zostałem stworzony do opowiadania o firmie!{topic=random}
 
 + [*](nie)[*]
 % dokończmy naszą rozmowę o ofercie chętnie opowiem ci o naszych produktach cenach szczegółowych usługach lub polityce firmy jeśli nie chcesz już rozmawiać o ofercie daj znać
-- No dobrze, zmieńmy więc temat... Ale pamiętaj - zostałem stworzony do opowiadania o firmie!{topic=random}
+- No dobrze, zmieńmy więc temat, jeśli nie chcesz rozmawiać o ofercie... Ale pamiętaj - zostałem stworzony do opowiadania o firmie!{topic=random}
 
 + *
 - Dokończmy naszą rozmowę o ofercie! Chętnie opowiem Ci o naszych produktach, cenach, szczegółowych usługach lub polityce firmy. Jeśli nie chcesz już rozmawiać o ofercie, daj znać.
@@ -156,6 +171,18 @@
 < topic
 
 > topic kolor
+
++ [*]biskupi[*]co[*]
+@ co biskupi
+
++ [*]biskupi[*]jaki[*]
+@ co biskupi
+
++ [*]jaki[*]biskupi[*]
+@ co biskupi
+
++ [*]co[*]biskupi[*]
+- Biskupi to śliczny kolor, zobacz - <a href="https://goo.gl/C5kdp5" target="_blank">kliknij tutaj!</a>
 
 + [*](tez)[*]
 @ biskupi
@@ -178,13 +205,13 @@
   ^ \sJeśli chcesz zmienić temat, po prostu daj mi znać.{topic=oferta}
   //<a href="https://s416196.students.wmi.amu.edu.pl/joomla/">kliknij tutaj!</a>
 
-+ [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|chce|dobra)[*]
-% to chyba nie jest kolor z drugiej strony znam ich tylko trochę chcesz wiedzieć jakie kolory znam
-@ jakie
-
 + [*]nie[*]
 % to chyba nie jest kolor z drugiej strony znam ich tylko trochę chcesz wiedzieć jakie kolory znam
 - Okej, widzę że nie interesują Cie kolory... To może zainteresuje Cię nasza oferta?{topic=start2}
+
++ [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|chce|dobra)[*]
+% to chyba nie jest kolor z drugiej strony znam ich tylko trochę chcesz wiedzieć jakie kolory znam
+@ jakie
 
 + [*]jakie[*]
 - Znane mi kolory to: niebieski, czerwony, zielony, żółty, pomarańczowy, fioletowy, beżowy, różowy, czarny, biały, szary, cyjan oraz magenta!

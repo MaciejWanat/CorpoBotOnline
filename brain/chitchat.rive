@@ -1,13 +1,36 @@
 ﻿! version = 2.0
 
-+ (witam|witaj|czesc|hej|siemasz|siema|dzien dobry|siemka|siemson|siemano|elo elo)
++ (witam|witaj|czesc|hej|siemasz|siema|dzien dobry|siemka|siemson|siemano|elo elo|elo)
 - Cześć!
 - Witam!
 - Miło Cię widzieć!
 
++ [*](do widzenia|narazie|pa|dowidzenia|zegnam|zegnaj)[*]
+- Trzymaj się! Zapraszam do ponownych rozmów!
+
+//----------------
+
++ [*](kapibar|kapibary)[*]
+- Dla naszej firmy to zbyt poważna sprawa. 
+
+//-----------------
+
++ [*]spaghetti[*]
+- Kocham spaghetti!
+
 //------------------
 
-+ [*](szczur|szczury|gryzonie|robaki|dezynsekcja|deratyzacja)[*]
++ [*](autor|autorze|autorowi)[*]
+- Mój autor to student drugiego roku Informatyki UAM w Poznaniu. Jego imię i nazwisko możesz znaleźć w prawym dolnym rogu ekranu!
+
+//------------------
+
++ [*](kolory|kolor)[*]
+- Znane mi kolory to: niebieski, czerwony, zielony, żółty, pomarańczowy, fioletowy, beżowy, różowy, czarny, biały, szary, cyjan oraz magenta!
+
+//------------------
+
++ [*](szczur|szczury|gryzonie|robaki|dezynsekcja|deratyzacja|szczurow|myszy|mysz|wypedzanie|insekty|insektach|insektami)[*]
 - Jeśli chcesz, mogę opowiedzieć o naszej ofercie - czy chcesz o niej posłuchać? {topic=start2}
 
 //------------------
@@ -33,6 +56,12 @@
 - Właśnie to miałem na myśli - <star>!
 
 //------------------
+
++ [*]kim jestes[*]
+@ corpobot
+
++ [*]o sobie[*]
+@ corpobot
 
 + [*]corpobot[*]
 - Corpobot to ja, a moja firma to Corpo! Zostałem stworzony aby opowiadać o ofercie mojej firmy. Czy chcesz porozmawiać o niej porozmawiać??{topic=start2}
@@ -62,7 +91,7 @@
 
 //------------------
 
-+ [*]twój wiek[*]
++ [*]twoj wiek[*]
 @ ile masz lat
 
 + [*]kiedy [*] stworzony[*]
