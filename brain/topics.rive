@@ -188,7 +188,7 @@
 @ biskupi
 
 + [*]biskupi[*]
-- No popatrz, oboje kochamy biskupi! To może opowiem Ci teraz o naszej ofercie? <set color="biskupi"> {topic=start2}
+- No popatrz, oboje kochamy biskupi! To może opowiem Ci teraz o naszej ofercie? <set color=biskupi> {topic=start2}
 
 + [*](niebieski|czerwony|zielony|zolty|pomaranczowy|fioletowy|bezowy|rozowy|czarny|bialy|szary|cyjan|magenta)[*]
 - <star> to także bardzo ładny kolor! To może chcesz teraz posłuchać o naszej ofercie? <set color=<star>>{topic=start2}
@@ -236,11 +236,11 @@
 @ mam na imie <star>
 
 + [*] mam na imie * [*]
-* <get color> == undefined => Miło Cię poznać, <star>! To może powiedz jeszcze, jaki jest Twój ulubiony kolor? Mój to biskupi!<set uname=star><set topic=kolor>
+* <get color> == undefined => Miło Cię poznać, <star>! To może powiedz jeszcze, jaki jest Twój ulubiony kolor? Mój to biskupi!<set uname=<star>><set topic=kolor>
 - Miło Cię poznać, <star>! <set topic = random>
 
 + *
-* <get color> == undefined => Miło Cię poznać, <star>! To może powiedz jeszcze, jaki jest Twój ulubiony kolor? Mój to biskupi!<set uname=star><set topic=kolor>
+* <get color> == undefined => Miło Cię poznać, <star>! To może powiedz jeszcze, jaki jest Twój ulubiony kolor? Mój to biskupi!<set uname=<star>><set topic=kolor>
 - Miło Cię poznać, <star>! <set topic = random>
 
 < topic

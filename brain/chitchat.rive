@@ -5,6 +5,23 @@
 - Witam!
 - Miło Cię widzieć!
 
+//----------------
+
++ [*] moj [*] kolor [*]
+* <get color> == undefined => Niestety nie wiem, jaki jest Twój ulubiony kolor :(
+- Z tego co wiem, Twój ulubiony kolor to <get color>
+
+//----------------
+
++ [*]moje imie[*]
+@ jak mam imie
+
++ [*]jak mam[*]imie
+* <get uname> == undefined => Niestety nie powiedziałeś mi jeszcze, jak masz na imię :(
+- Z tego co wiem, masz na imie <get uname>!
+
+//----------------
+
 + [*](do widzenia|narazie|pa|dowidzenia|zegnam|zegnaj)[*]
 - Trzymaj się! Zapraszam do ponownych rozmów!
 
@@ -137,10 +154,10 @@
 //-------------------------
 
 + moje imie to *
-@ mam na imie <star> <set uname=star>
+@ mam na imie <star> <set uname=<star>>
 
 + [*] mam na imie *
-- Miło Cię poznać, <star> <set uname=star>!
+- Miło Cię poznać, <star> <set uname=<star>>!
 
 //-------------------------
 
