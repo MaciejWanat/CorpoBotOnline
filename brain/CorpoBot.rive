@@ -15,18 +15,17 @@
 @ pomoc
 
 + [*] (pomoc|pomocy|pomoz) [*]
-- Mogę Ci powiedzieć czym zajmuje się firma Corpo. Możesz spytać mnie o naszą ofertę. Możemy też pogadać na jakiś luźniejszy temat!
+- Mogę Ci powiedzieć czym zajmuje się firma Corpo. Jeśli chcesz o niej pogadać, spytaj o ofertę. Możemy też pogadać na jakiś luźniejszy temat!
 
 + [*] jak (nazywa|zwie) [*] firma [*]
 - Nasza firma to Corpo! Czyżbyś zapomniał? Oto link do naszej strony internetowej: <a href="https://s416196.students.wmi.amu.edu.pl/joomla/" target="_blank">kliknij tutaj!</a>
 
 //-----------------------
 
-
 + [*] (corpo|firma|firmie) [*]
 - Corpo to moja ulubiona firma. Oferujemy usługi z zakresu deratyzacji. Czy chcesz dowiedzieć się więcej?
 
-+ [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|poprosze|chce|dobra)[*]
++ [*](tak|pewnie|owszem|jasne|czemu nie|bardzo|dobrze|ok|oczywiscie|poprosze|chce|dobra|chetnie)[*]
 % corpo to moja ulubiona firma oferujemy usługi z zakresu deratyzacji czy chcesz dowiedzieć się więcej
 @ oferta
 
@@ -36,7 +35,7 @@
 
 //------------------------
 
-+ [*] (oferta|oferte|ofercie) [*]
++ [*] (oferta|oferte|ofercie|oferujecie) [*]
 - Porozmawiajmy więc o naszej ofercie!\n
 ^ W naszej ofercie znajdują się wszelkie możliwe usługi, jeśli masz problemy z insektami. Deratyzacja obiektu\s
 ^ to koszt 500 zł. Pojedyncze pomieszczenie to koszt 100 zł.\n
@@ -45,9 +44,13 @@
 //<a href="https://s416196.students.wmi.amu.edu.pl/joomla/">kliknij tutaj!</a>
 ^ Jeśli chcesz zmienić temat, po prostu daj mi znać.
 
-+ (tak|pewnie|jasne|czemu nie|dobrze|ok|oczywiscie)
++ (tak|pewnie|jasne|czemu nie|dobrze|ok|oczywiscie|ta)
 % w porządku zawsze możemy wrócić do tematu jeśli tylko chcesz
 - Okey dokey! Pamiętaj, że jestem stworzony by rozmawiać o naszej ofercie.
+
++ [*]nie[*]
+% nie zrozumiałem czy mógłbyś inaczej sformułować wypowiedź
+- Szkoda, jestem tylko botem, nie rozumiem wszystkiego :(
 
 + *
 - Nie zrozumiałem, czy mógłbyś inaczej sformułować wypowiedź?
