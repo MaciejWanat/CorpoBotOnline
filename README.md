@@ -1,8 +1,12 @@
 # CorpoBot Online
 CorpoBot Online to implementacja online chatbota który ma za zadanie przedstawiać ofertę fikcyjnej firmy Corpo.
+
 Powinien on być dostępny pod adresem: https://s416196.students.wmi.amu.edu.pl/CorpoBot/chat.html.
+
 Poniżej znajduje się plik readme od implementacji online.
+
 Wykorzystano implementację interpretera RiveScript w języku nodejs:
+
 https://github.com/aichaos/rivescript-js
 
 # Web Client Example
